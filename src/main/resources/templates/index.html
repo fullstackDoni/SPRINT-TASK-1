@@ -22,14 +22,12 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr th:each="stud : ${student}">
+                    <tr th:each="stud : ${student}" th:style="${stud.exam>=50?'color:black;':'color:red;'}">
+                        <td th:text="${stud.id}"></td>
                         <td th:text="${stud.name}"></td>
                         <td th:text="${stud.surname}"></td>
                         <td th:text="${stud.exam}"></td>
                         <td th:text="${stud.mark}"></td>
-                        <td>
-                            <button class="btn btn-outline-primary">Details</button>
-                        </td>
                     </tr>
                     </tbody>
                 </table>
