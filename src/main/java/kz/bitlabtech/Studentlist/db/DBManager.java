@@ -14,7 +14,7 @@ public class DBManager {
         students.add(new Student(4L,"Joseph","Stalin",88,"B"));
         students.add(new Student(5L,"Johnny","Depp",85,"B"));
         students.add(new Student(6L,"Sponge","Bob",35,"F"));
-        students.add(new Student(7L,"Patrick","Star",15,"F"));
+        students.add(new Student(7L,"Patrick","Star",32,"F"));
         students.add(new Student(8L,"Kobe","Bryant",77,"B"));
     }
     public static ArrayList<Student> getStudents(){

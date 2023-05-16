@@ -22,7 +22,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr th:each="stud : ${student}" th:style="${stud.exam>=50?'color:black;':'color:red;'}">
+                    <tr th:each="stud : ${student}" th:style="${stud.exam < 50?'color: red':''}">
                         <td th:text="${stud.id}"></td>
                         <td th:text="${stud.name}"></td>
                         <td th:text="${stud.surname}"></td>
